@@ -39,8 +39,8 @@ const Lectures = () => {
         <p className="text-2xl text-[#2C3E50] font-bold mb-2">We are exclusively available only on</p>
         <div className="flex justify-center items-center">
           <a href={'https://www.youtube.com/@EduMoon'}>  <img src={youtubeLogo} alt="YouTube Logo" className="h-10 mx-4" /> </a>
-          <p className="text-2xl font-bold mb-2">&</p> 
-          <a href={'https://www.youtube.com/@EduMoon'}>  <img src={edumoonLogo} alt="EduMoon Logo" className="h-10 mx-4" /> </a>
+           
+          <Link to='/Course'> <img src={edumoonLogo} alt="EduMoon Logo" className="h-10 mx-4" /> </Link>
 
         </div>
       </div>

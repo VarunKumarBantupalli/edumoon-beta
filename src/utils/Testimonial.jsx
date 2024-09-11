@@ -18,9 +18,9 @@ const TestimonialCard = ({ testimonial }) => {
 
 const Testimonial = () => {
   return (
-    <section className="bg-[#2C3E50] py-12">
+    <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-center text-white">We value our learners and let's see what they said about us</h2>
+        <h2 className="text-3xl font-extrabold text-center text-blue-950">We value our learners and let's see what they said about us</h2>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
