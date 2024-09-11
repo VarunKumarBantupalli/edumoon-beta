@@ -1,20 +1,14 @@
 {
   "name": "internshipedumoon",
-  "version": "1.0.0",
-  "main": "index.js",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -38,4 +32,3 @@
     "vite": "^5.4.1"
   }
 }
-

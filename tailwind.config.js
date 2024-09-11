@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -24,13 +24,3 @@ export default {
   },
   plugins: [],
 };
-
-
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
