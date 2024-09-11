@@ -5,7 +5,7 @@ function Course() {
   return (
     <>
     <div>
-      <h1 className="h-screen w-max text-4xl font-extrabold">this is Courses page</h1>
+      <h1 className="h-screen w-max text-4xl font-extrabold">this is Courses page the courses will come from graphy</h1>
     </div>
     <Footer/>
     </>
