@@ -4,6 +4,7 @@ import SocialMedia from "./utils/SocialMedia"
 import Testimonial from "./utils/Testimonial"
 import EventImages from "./utils/EventImages"
 import ContactForm from "./utils/ContactForm"
+import Hiring from "./utils/Hiring"
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
      <div className=" flex justify-center items-center w-[100%] h-[100vh]">
       <ContactForm/>
      </div>
+     <Hiring/>
 
 
     </>
