@@ -1,9 +1,20 @@
 import React from 'react'
+import Footer from '../utils/Footer'
+import Articles from '../utils/Articles'
+import Acheivements from './Acheivements'
+import OurTeam from './OurTeam'
+import Mentors from './Mentors'
+import Founders from './Founders'
 
 export default function Aboutus() {
   return (
-    <div>
-      <h1 className="h-screen w-max text-4xl font-extrabold">this is about us page (wanted to do it with GSAP)</h1>
-    </div>
+     <>
+     <Founders/>
+     <Mentors/>
+      <OurTeam/>
+     <Acheivements/>
+     <Articles/>
+     <Footer/>
+     </>
   )
 }
