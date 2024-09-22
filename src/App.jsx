@@ -9,9 +9,19 @@ import Clubs from './components/Clubs';
 import Profile from './components/Profile';
 import Tutition from './components/Tutition';
 
+<<<<<<< HEAD
+=======
+import Articles from "./utils/Articles"
+import SocialMedia from "./utils/SocialMedia"
+import Testimonial from "./utils/Testimonial"
+import EventImages from "./utils/EventImages"
+import ContactForm from "./utils/ContactForm"
+import Hiring from "./utils/Hiring"
+>>>>>>> e4a89321b9d7f8674f22575cd43546de32abf142
 
 function App() {
   return (
+<<<<<<< HEAD
     <Router>
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
@@ -27,3 +37,28 @@ function App() {
 }
 
 export default App;
+=======
+    <>
+     <EventImages/>
+     <SocialMedia/>
+     <Articles/>
+     <Testimonial/>
+     <div className=" flex justify-center items-center w-[100%] h-[100vh]">
+      <ContactForm/>
+     </div>
+     <Hiring/>
+
+
+    </>
+  )
+}
+
+export default App
+
+const ExtendedFamilySection = () => {
+  console.log("ExtendedFamilySection rendered");
+  return (
+    <section>...</section>
+  );
+};
+>>>>>>> e4a89321b9d7f8674f22575cd43546de32abf142
