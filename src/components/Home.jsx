@@ -55,7 +55,7 @@ function Home() {
       </div>
 
       {/* Content Sections */}
-      <ContactForm/>
+
       <Lectures />
       <Workshops />
       <Webinar />
