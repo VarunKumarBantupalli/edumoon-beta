@@ -11,7 +11,7 @@ export default function Aboutus() {
      <>
      <Founders/>
      <Mentors/>
-      <OurTeam/>
+     <OurTeam/>
      <Acheivements/>
      <Articles/>
      <Footer/>

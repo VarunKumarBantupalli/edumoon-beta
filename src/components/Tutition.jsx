@@ -5,15 +5,17 @@ import Mentors from './Mentors'
 import Stats from '../utils/Stats'
 import Testimonial from '../utils/Testimonial'
 import Footer from '../utils/Footer'
+import ContactForm from '../utils/ContactForm'
 
 function Tutition() {
   return (
     <>
      <Hiring/>
-     <Bookdemoclass/>
+     {/* <Bookdemoclass/> */}
      <Mentors/>
      <Stats/>
      <Testimonial/>
+     <ContactForm/>
      <Footer/>
     </>
   )

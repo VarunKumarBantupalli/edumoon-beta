@@ -17,7 +17,7 @@ function OurTeam() {
     {
       name: 'Shoukath Ali',
       title: 'Chief Technological Officer',
-      imgSrc: 'src/assets/images/lectures_images/team3png',
+      imgSrc: 'src/assets/images/lectures_images/team3.png',
       link: 'https://www.linkedin.com/in/shoukath-ali-shaik-9b2b43280/',
     },
     {

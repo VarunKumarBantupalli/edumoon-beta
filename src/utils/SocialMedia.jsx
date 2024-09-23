@@ -6,25 +6,20 @@ const SocialMedia = () => {
 
   return (
     <div
-      className={`flex flex-wrap justify-center gap-4 p-4 transition-colors duration-500 ${
-        activeIndex !== null ? socialMediaPlatforms[activeIndex].color : "bg-white"
-      }`}
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
     >
       {socialMediaPlatforms.map((platform, index) => (
         <div
           key={index}
           className={`transition-all duration-300 transform ${
-            activeIndex === null || activeIndex === index ? "opacity-100 scale-105" : "opacity-0 scale-95"
-          } ${platform.color} text-white rounded-lg shadow-lg`}
+            activeIndex === null || activeIndex === index
+              ? "opacity-100 scale-105"
+              : "opacity-50 blur-sm"
+          } ${platform.color} text-white rounded-lg shadow-lg h-64`}
           onMouseEnter={() => setActiveIndex(index)}
           onMouseLeave={() => setActiveIndex(null)}
-          style={{
-            flex: '1 1 calc(33.333% - 1rem)', 
-            maxWidth: 'calc(33.333% - 1rem)', 
-            minWidth: '250px' 
-          }}
         >
-          <div className="flex flex-col items-center text-center p-4">
+          <div className="flex flex-col items-center text-center p-4 h-full justify-between">
             <img
               src={platform.logo}
               alt={`${platform.name} logo`}
