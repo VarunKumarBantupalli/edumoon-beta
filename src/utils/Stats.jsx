@@ -47,20 +47,20 @@ const statsData = [
 
 const Stats = () => {
   return (
-    <section className="text-gray-600 body-font py-24 bg-gray-100">
+    <section className="text-gray-600 body-font py-20 bg-white">
       <div className="container px-5 mx-auto">
         <div className="flex flex-wrap -m-4">
           {statsData.map((stat, index) => (
             <div key={index} className="p-4 md:w-1/3">
               <div className="h-full bg-[#2C3E50] rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-                <div className="flex justify-center items-center p-6">
+                <div className="flex justify-center items-center p-3">
                   <img
-                    className="w-24 h-24 object-cover object-center transition-transform duration-500 transform hover:rotate-12"
+                    className="w-24 h-24 object-cover object-center transition-transform duration-500 transform "
                     src={stat.img}
                     alt={stat.title}
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-3">
                   <h2 className="title-font text-xl font-bold text-white mb-2">{stat.title}</h2>
                   <p className="leading-relaxed text-white mb-4">{stat.description}</p>
                   <div className="flex items-center justify-start">

@@ -3,7 +3,6 @@ import Collegeclub from './Collegeclub'
 import SocialMedia from '../utils/SocialMedia'
 import EventImages from '../utils/EventImages'
 import Testimonial from '../utils/Testimonial'
-import Footer from '../utils/Footer'
 
 function Clubs() {
   return (
@@ -12,7 +11,6 @@ function Clubs() {
        <SocialMedia/>
        <EventImages/>
        <Testimonial/>
-       <Footer/>
      </>
   )
 }

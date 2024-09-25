@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../utils/Footer'
+
 import Articles from '../utils/Articles'
 import Acheivements from './Acheivements'
 import OurTeam from './OurTeam'
@@ -14,7 +14,7 @@ export default function Aboutus() {
      <OurTeam/>
      <Acheivements/>
      <Articles/>
-     <Footer/>
+   
      </>
   )
 }

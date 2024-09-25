@@ -5,9 +5,7 @@ const SocialMedia = () => {
   const [activeIndex, setActiveIndex] = React.useState(null);
 
   return (
-    <div
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
-    >
+    <div className="gap-4 p-4 flex items-center justify-center flex-wrap">
       {socialMediaPlatforms.map((platform, index) => (
         <div
           key={index}
@@ -15,7 +13,7 @@ const SocialMedia = () => {
             activeIndex === null || activeIndex === index
               ? "opacity-100 scale-105"
               : "opacity-50 blur-sm"
-          } ${platform.color} text-white rounded-lg shadow-lg h-64`}
+          } ${platform.color} text-white rounded-lg shadow-lg w-64 h-64 m-2`}
           onMouseEnter={() => setActiveIndex(index)}
           onMouseLeave={() => setActiveIndex(null)}
         >
@@ -23,7 +21,7 @@ const SocialMedia = () => {
             <img
               src={platform.logo}
               alt={`${platform.name} logo`}
-              className="w-12 h-12 mb-4"
+              className="w-16 h-16 mb-4"
             />
             <h3 className="text-lg font-semibold mb-2">{platform.name}</h3>
             <p className="text-sm mb-4">{platform.description}</p>
