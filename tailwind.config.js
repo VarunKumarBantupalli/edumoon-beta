@@ -3,6 +3,8 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/HTML/**/*.html",
+     // Including all HTML files in src/HTML folder
   ],
   theme: {
     extend: {
@@ -23,7 +25,6 @@ export default {
       animation: {
         scroll: 'scroll 15s linear infinite',
         scrollReverse: 'scrollReverse 15s linear infinite',
-        // Adjusting slide animation for different screen sizes
         slide: 'slide 15s linear infinite', // Default for larger screens
         'slide-mobile': 'slide 7s linear infinite', // Faster for mobile
         'slide-tablet': 'slide 8s linear infinite', // Medium speed for tablets
@@ -36,4 +37,4 @@ export default {
     },
   },
   plugins: [],
-}
+};

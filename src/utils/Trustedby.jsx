@@ -12,7 +12,7 @@ import icon9 from '../assets/images/trustedby_images/stpilogo.png';
 function Trustedby() {
     return (
         <div className="bg-white py-10">
-            <h2 className="text-4xl font-bold text-center mb-6 bg-[#2C3E50] p-2"><strong>Trusted By</strong></h2>
+            <h2 className="text-4xl font-bold text-center mb-6 text-white bg-[#2C3E50] p-2"><strong>Trusted By</strong></h2>
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     <img src={icon1} alt="AICTE Logo" className="w-full h-auto object-contain p-4" />

@@ -27,8 +27,8 @@ const Workshops = () => {
         </div>
       </div>      
      
-      <div className="w-full overflow-hidden">
-        <div className="flex animate-scroll whitespace-nowrap">
+      <div className="w-full overflow-hidden ">
+        <div className="flex animate-scroll slide-mobile slide-tablet whitespace-nowrap">
           {images.map((image, index) => (
             <img
               key={index}

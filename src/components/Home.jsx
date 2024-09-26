@@ -16,6 +16,7 @@ import poster5 from '../assets/images/poster_images/poster5.jpg';
 import poster6 from '../assets/images/poster_images/poster6.jpg';
 import poster7 from '../assets/images/poster_images/poster7.jpg';
 import Trustedby from '../utils/Trustedby';
+import Clients from './Clients';
 
 function Home() {
   return (
@@ -31,10 +32,11 @@ function Home() {
         </div>
       </div>
       <Trustedby />
+      <Clients/>
       <Lectures />
       <Workshops />
       <Webinar />
-      <Outdooractivites />
+      {/* <Outdooractivites /> */}
       <SocialMedia />
       <Stats />
       <Hiring />

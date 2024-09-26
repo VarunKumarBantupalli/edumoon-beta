@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import images
+
 import auImage from '../assets/images/other_images/au.png';
 import auWomenImage from '../assets/images/other_images/au.png';
 import sanketikaImage from '../assets/images/other_images/sankethika.png';
@@ -14,66 +14,68 @@ import pydahImage from '../assets/images/other_images/Pydah.png';
 import bullayaImage from '../assets/images/other_images/bullaya.png';
 import gitamImage from '../assets/images/other_images/gitam.png';
 
+
+
 const CollegeClub = () => {
   const colleges = [
     {
       name: 'Andhra University',
-      link: 'https://theedumoon.com/sny',
+      link: '../../public/HTML/college_pages/Anits.html',
       image: auImage,
     },
     {
       name: 'Andhra University for Women',
-      link: 'https://theedumoon.com/au%20women.html',
+      link: '../../public/HTML/college_pages/AUwomens.html',
       image: auWomenImage,
     },
     {
       name: 'Sanketika Vidya Parishad',
-      link: 'https://theedumoon.com/skp1%20(1).html',
+      link: '../../public/HTML/college_pages/Sankethika.html',
       image: sanketikaImage,
     },
     {
       name: 'ST. Joseph College for Women',
-      link: 'https://theedumoon.com/stjoseph',
+      link: '../../public/HTML/college_pages/StJoseph.html',
       image: stJosephImage,
     },
     {
       name: 'Sri Mahathi Vidyaapeeth',
-      link: 'https://theedumoon.com/mahathi1',
+      link: '../../public/HTML/college_pages/Mahathi.html',
       image: mahathiImage,
     },
     {
       name: 'Centurion University',
-      link: 'https://theedumoon.com/cu1',
+      link: '../../public/HTML/college_pages/Centurion.html',
       image: centurionImage,
     },
     {
       name: 'BITS Vizag',
-      link: 'https://theedumoon.com/bits',
+      link: '../../public/HTML/college_pages/Bits.html',
       image: bitsImage,
     },
     {
       name: 'ANITS',
-      link: 'https://theedumoon.com/anits',
+      link: '../../public/HTML/college_pages/Anits.html',
       image: anitsImage,
     },
     {
       name: 'Chaitanya Engineering College',
-      link: 'https://theedumoon.com/cec%20(1)',
+      link: '../../public/HTML/college_pages/Chaitanya.html',
       image: chaitanyaImage,
     },
     {
       name: 'Pydah Educational Academy',
-      link: 'https://theedumoon.com/pydah',
+      link: '../../public/HTML/college_pages/Pydah.html',
       image: pydahImage,
     },
     {
       name: 'Dr. Lankapalli Bullaya College',
-      link: 'https://theedumoon.com/bullayya',
+      link: '../../public/HTML/college_pages/Bits.html',
       image: bullayaImage,
     },
     {
       name: 'GITAM University',
-      link: 'https://theedumoon.com/gitam',
+      link: '../../public/HTML/college_pages/Gitam.html',
       image: gitamImage,
     },
   ];
@@ -84,7 +86,7 @@ const CollegeClub = () => {
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="text-4xl  font-extrabold mb-4 text-blue-950">We are Established at</h1>
         </div>
-        
+
         <div className="flex flex-wrap -m-4">
           {colleges.map((college, index) => (
             <div key={index} className="p-4 lg:w-1/4 md:w-1/2 hover:scale-105 transform transition duration-300">
