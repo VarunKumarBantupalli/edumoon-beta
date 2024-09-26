@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/socialmedialogos/edumoonlogo.png';
 import applestorelogo from '../assets/images/socialmedialogos/apple.store.png';
-import playstorelogo from '../assets/images/socialmedialogos/playstore.png';
+import playstorelogo from '../assets/images/socialmedialogos/playstore_latest.png';
 import mobile from '../assets/images/socialmedialogos/app.png';
 
 function Mobileapp() {
