@@ -31,17 +31,17 @@ function Home() {
           <img src={poster7} alt="Poster 7" className="w-[80vw] md:w-[60vw] lg:w-[80vw] h-full object-contain" />
         </div>
       </div> </a>
-      <Trustedby />
+       <Trustedby />
       <Clients />
       <Lectures />
       <Workshops />
       <Webinar />
-      {/* <Outdooractivites /> */}
-      <SocialMedia />
+       <Outdooractivites />
+       <SocialMedia />
       <Stats />
       <Hiring />
       <Testimonial />
-      <Mobileapp />
+      <Mobileapp /> 
     </>
   );
 }

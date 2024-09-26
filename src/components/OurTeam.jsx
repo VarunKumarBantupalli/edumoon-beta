@@ -30,28 +30,29 @@ function OurTeam() {
 
   return (
     <>
-      <section className="text-white bg-[#2C3E50] body-font">
-        <div className="container px-5 py-4 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-4xl font-medium title-font mb-4 text-white">OUR TEAM</h1>
+      <section className=" text-[#2C3E50] body-font">
+        <div className="container px-5 py-12 mx-auto">
+          <div className="flex flex-col text-center w-full mb-12">
+            <h1 className="text-3xl md:text-4xl font-medium title-font mb-4 text-[#2C3E50]">
+              OUR TEAM
+            </h1>
           </div>
-          <div className="flex flex-wrap -m-4">
+          {/* Responsive grid layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
-              <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
-                <div className="h-full flex flex-col items-center text-center">
-                  <div className="relative w-full h-56 mb-4">
-                    <img 
-                      alt="team" 
-                      className="absolute inset-0 w-full h-full object-cover rounded-lg" 
-                      src={member.imgSrc} 
-                    />
-                  </div>
-                  <div className="w-full">
-                    <a href={member.link} className="title-font font-medium text-lg text-white">
-                      {member.name}
-                    </a>
-                    <h3 className="text-white mb-3">{member.title}</h3>
-                  </div>
+              <div key={index} className="p-4 flex flex-col items-center text-center rounded-lg shadow-lg">
+                <div className="relative w-full h-56 mb-4">
+                  <img
+                    alt="team"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                    src={member.imgSrc}
+                  />
+                </div>
+                <div className="w-full">
+                  <a href={member.link} className="title-font font-medium text-[#2C3E50] text-lg ">
+                    {member.name}
+                  </a>
+                  <h3 className="text-[#2C3E50] mb-3">{member.title}</h3>
                 </div>
               </div>
             ))}
