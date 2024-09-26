@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-// Import images
 import logo from '../assets/images/socialmedialogos/edumoonlogo.png'; // Update with the correct path if needed
 
 function Footer() {
@@ -22,30 +22,30 @@ function Footer() {
           {/* Section 1 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
-              <li>
+            <Link to='/'>  <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">HOME</a>
-              </li>
-              <li>
+              </li></Link>
+              <Link to='/aboutus'>  <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">ABOUT US</a>
-              </li>
-              <li>
+              </li></Link>
+                <li>
                 <a href="https://www.edumoon.in/s/store" className="text-black hover:text-gray-800 mb-2 inline-block">COURSES</a>
               </li>
-              <li>
+              <Link to='/events' > <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">EVENTS</a>
-              </li>
+              </li></Link>
             </nav>
           </div>
 
           {/* Section 2 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
-              <li>
+             <Link to='/clubs'> <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">CLUBS</a>
-              </li>
-              <li>
+              </li> </Link>
+              <Link to='/tution'> <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">TUTIONS</a>
-              </li>
+              </li> </Link>
               <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">PRIVACY POLICY</a>
               </li>
@@ -55,7 +55,7 @@ function Footer() {
             </nav>
           </div>
 
-          {/* Section 3 */}
+          
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">CONTACT US</h2>
             <nav className="list-none mb-10">
@@ -73,7 +73,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Footer Bottom */}
+     
       <div className="border-t border-gray-200">
         <div className="bg-white">
           <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">

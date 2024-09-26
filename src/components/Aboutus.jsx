@@ -12,7 +12,7 @@ export default function Aboutus() {
      <Founders/>
      <Mentors/>
      <OurTeam/>
-     <Acheivements/>
+     {/* <Acheivements/> */}
      <Articles/>
    
      </>

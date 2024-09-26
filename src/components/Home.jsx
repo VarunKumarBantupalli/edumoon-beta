@@ -21,7 +21,7 @@ import Clients from './Clients';
 function Home() {
   return (
     <>
-      <div className="posters h-[30vh] md:h-[40vh] lg:h-[70vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden">
+      <a href="https://www.edumoon.in/s/store"> <div className="posters h-[30vh] md:h-[40vh] lg:h-[70vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden">
         <div className="flex animate-slide slide-mobile slide-tablet gap-5 m-10 ">
           <img src={poster1} alt="Poster 1" className="w-[80vw] md:w-[60vw] lg:w-[80vw] h-full object-contain" />
           <img src={poster3} alt="Poster 3" className="w-[80vw] md:w-[60vw] lg:w-[80vw] h-full object-contain" />
@@ -30,9 +30,9 @@ function Home() {
           <img src={poster6} alt="Poster 6" className="w-[80vw] md:w-[60vw] lg:w-[80vw] h-full object-contain" />
           <img src={poster7} alt="Poster 7" className="w-[80vw] md:w-[60vw] lg:w-[80vw] h-full object-contain" />
         </div>
-      </div>
+      </div> </a>
       <Trustedby />
-      <Clients/>
+      <Clients />
       <Lectures />
       <Workshops />
       <Webinar />
