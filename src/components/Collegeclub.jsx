@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import auImage from '../assets/images/other_images/au.png';
 import auWomenImage from '../assets/images/other_images/au.png';
 import sanketikaImage from '../assets/images/other_images/sankethika.png';
@@ -13,8 +12,6 @@ import chaitanyaImage from '../assets/images/other_images/chaitanya.png';
 import pydahImage from '../assets/images/other_images/Pydah.png';
 import bullayaImage from '../assets/images/other_images/bullaya.png';
 import gitamImage from '../assets/images/other_images/gitam.png';
-
-
 
 const CollegeClub = () => {
   const colleges = [
@@ -82,18 +79,23 @@ const CollegeClub = () => {
 
   return (
     <section className="bg-white shadow-lg text-blue-950 body-font">
-      <div className="container px-5 py-10 mx-auto">
+      <div className="container max-w-screen-lg px-5 py-10 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="text-4xl  font-extrabold mb-4 text-blue-950">We are Established at</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-blue-950">
+            We are Established at
+          </h1>
         </div>
 
-        <div className="flex flex-wrap -m-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {colleges.map((college, index) => (
-            <div key={index} className="p-4 lg:w-1/4 md:w-1/2 hover:scale-105 transform transition duration-300">
+            <div
+              key={index}
+              className="p-4 hover:scale-105 transform transition duration-300"
+            >
               <div className="h-full flex flex-col items-center text-center">
                 <img
                   alt={college.name}
-                  className="flex-shrink-0 rounded-lg w-1/2 h-40 object-cover object-center mb-4 hover:scale-110 transform transition duration-300 shadow-md"
+                  className="flex-shrink-0 rounded-lg w-full h-40 object-contain object-center mb-4 hover:scale-110 transform transition duration-300 shadow-lg"
                   src={college.image}
                 />
                 <div className="w-full">
