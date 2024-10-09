@@ -5,6 +5,8 @@ import Acheivements from './Acheivements'
 import OurTeam from './OurTeam'
 import Mentors from './Mentors'
 import Founders from './Founders'
+import Extendedfamily from '../utils/Extendedfamily'
+
 
 export default function Aboutus() {
   return (
@@ -12,6 +14,8 @@ export default function Aboutus() {
      <Founders/>
      <Mentors/>
      <OurTeam/>
+     <Extendedfamily/>
+     
      {/* <Acheivements/> */}
      <Articles/>
    
