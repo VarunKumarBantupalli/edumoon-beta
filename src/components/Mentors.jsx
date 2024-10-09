@@ -6,7 +6,6 @@ import mentor4 from '../assets/images/other_images/mentor4.png';
 import mentor5 from '../assets/images/other_images/mentor5.png';
 import mentor6 from '../assets/images/other_images/mentor6.png';
 
-
 const mentors = [
   {
     name: 'Prof. P. Srinivasa Rao',
@@ -55,14 +54,14 @@ const Mentors = () => {
         </div>
         <div className="flex flex-wrap -m-4">
           {mentors.map((mentor, index) => (
-            <div key={index} className="p-4 lg:w-1/3 md:w-1/2 w-full hover:scale-105 transform transition duration-500">
-              <div className="h-full flex items-center border-gray-200 border p-6 rounded-lg shadow-lg hover:shadow-2xl">
+            <div key={index} className="p-4 lg:w-1/3 md:w-1/2 w-full hover:scale-105">
+              <div className="h-full flex flex-col md:flex-row items-center border-gray-200 border p-6 rounded-lg shadow-lg hover:shadow-2xl">
                 <img
                   alt="mentor"
-                  className="w-32 h-32 bg-gray-500 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-md hover:rotate-12 transition-transform duration-500"
+                  className="w-32 h-32 bg-gray-500 object-cover object-center flex-shrink-0 rounded-full mb-4 md:mb-0 md:mr-4 shadow-md hover: transition-transform duration-500"
                   src={mentor.img}
                 />
-                <div className="flex-grow p-4">
+                <div className="flex-grow text-center md:text-left">
                   <a
                     href={mentor.linkedin}
                     className="text-blue-950 title-font font-medium text-lg hover:text-blue-400 transition-colors duration-300"

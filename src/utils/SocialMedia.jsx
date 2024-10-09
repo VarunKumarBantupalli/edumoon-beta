@@ -5,7 +5,7 @@ const SocialMedia = () => {
   const [activeIndex, setActiveIndex] = React.useState(null);
 
   return (
-    <div className="gap-4 p-4 flex items-center justify-center flex-wrap">
+    <div className="gap-10 p-4 flex items-center justify-evenly flex-wrap ">
       {socialMediaPlatforms.map((platform, index) => (
         <div
           key={index}
@@ -13,27 +13,23 @@ const SocialMedia = () => {
             activeIndex === null || activeIndex === index
               ? "opacity-100 scale-105"
               : "opacity-50 blur-sm"
-          } ${platform.color} text-white rounded-lg shadow-lg w-64 h-64 m-2`}
+          } ${platform.color} text-white shadow-lg w-32 h-32 m-2 flex flex-col items-center justify-center rounded-2xl`}
           onMouseEnter={() => setActiveIndex(index)}
           onMouseLeave={() => setActiveIndex(null)}
         >
-          <div className="flex flex-col items-center text-center p-4 h-full justify-between">
-            <img
-              src={platform.logo}
-              alt={`${platform.name} logo`}
-              className="w-16 h-16 mb-4"
-            />
-            <h3 className="text-lg font-semibold mb-2">{platform.name}</h3>
-            <p className="text-sm mb-4">{platform.description}</p>
-            <a
-              href={platform.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-black py-2 px-4 rounded-full hover:bg-gray-300"
-            >
-              Join Now
-            </a>
-          </div>
+          <img
+            src={platform.logo}
+            alt={`${platform.name} logo`}
+            className="w-16 h-16 mb-4"
+          />
+          <a
+            href={platform.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent text-white py-2 px-4 rounded-full hover:bg-gray-500"
+          >
+            {platform.button}
+          </a>
         </div>
       ))}
     </div>

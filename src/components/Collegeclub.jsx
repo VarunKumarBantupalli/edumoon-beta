@@ -7,7 +7,7 @@ import stJosephImage from '../assets/images/other_images/st.png';
 import mahathiImage from '../assets/images/other_images/mahathi.png';
 import centurionImage from '../assets/images/other_images/centurion.png';
 import bitsImage from '../assets/images/other_images/bits.png';
-import anitsImage from '../assets/images/other_images/au.png';
+import anitsImage from '../assets/images/other_images/anits.jpeg';
 import chaitanyaImage from '../assets/images/other_images/chaitanya.png';
 import pydahImage from '../assets/images/other_images/Pydah.png';
 import bullayaImage from '../assets/images/other_images/bullaya.png';
@@ -86,7 +86,7 @@ const CollegeClub = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-6 gap-8">
           {colleges.map((college, index) => (
             <div
               key={index}

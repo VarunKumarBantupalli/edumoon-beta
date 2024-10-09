@@ -1,16 +1,19 @@
 import React from 'react'
 import Collegeclub from './Collegeclub'
 import SocialMedia from '../utils/SocialMedia'
-import EventImages from '../utils/EventImages'
-import Testimonial from '../utils/Testimonial'
+import ClubsDisplay from './ClubsDisplay'
+import OfferedClubs from './OfferedClubs'
+
+import TestimonialsforClubs from '../utils/TestimonialsforClubs'
 
 function Clubs() {
   return (
      <>
-       <Collegeclub/>
+       <OfferedClubs/>
+       <Collegeclub/>      
+       <ClubsDisplay/>
        <SocialMedia/>
-       <EventImages/>
-       <Testimonial/>
+       <TestimonialsforClubs/>
      </>
   )
 }

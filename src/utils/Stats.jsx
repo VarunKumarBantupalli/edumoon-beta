@@ -49,22 +49,27 @@ const Stats = () => {
   return (
     <section className="text-gray-600 body-font py-20 bg-white">
       <div className="container px-5 mx-auto">
+        <div className="w-full mb-10">
+          <h2 className="text-4xl font-bold text-center text-white bg-[#2C3E50] p-4 rounded-lg shadow-lg">
+            <strong>Our Achievements</strong>
+          </h2>
+        </div>
         <div className="flex flex-wrap -m-4">
           {statsData.map((stat, index) => (
-            <div key={index} className="p-4 md:w-1/3">
-              <div className="h-full bg-[#2C3E50] rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+            <div key={index} className="p-4 w-1/2 sm:w-1/2 md:w-1/3">
+              <div className="h-full bg-white rounded-lg overflow-hidden shadow-lg transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                 <div className="flex justify-center items-center p-3">
                   <img
-                    className="w-24 h-24 object-cover object-center transition-transform duration-500 transform "
+                    className="w-16 h-16 sm:w-16 sm:h-16 md:w-24 md:h-24 object-cover object-center transition-transform duration-500 transform"
                     src={stat.img}
                     alt={stat.title}
                   />
                 </div>
-                <div className="p-3">
-                  <h2 className="title-font text-xl font-bold text-white mb-2">{stat.title}</h2>
-                  <p className="leading-relaxed text-white mb-4">{stat.description}</p>
+                <div className="p-1">
+                  <h2 className="title-font text-xl font-bold text-black mb-2">{stat.title}</h2>
+                  <p className="leading-relaxed text-black mb-4">{stat.description}</p>
                   <div className="flex items-center justify-start">
-                    <a
+                    {/* <a
                       href="https://www.edumoon.in/s/store"
                       className="text-blue-200 inline-flex items-center transition duration-300 hover:text-blue-400"
                     >
@@ -81,7 +86,7 @@ const Stats = () => {
                         <path d="M5 12h14" />
                         <path d="M12 5l7 7-7 7" />
                       </svg>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

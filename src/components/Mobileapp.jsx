@@ -8,7 +8,7 @@ function Mobileapp() {
     return (
         <div className="flex flex-col md:flex-row w-full h-auto bg-neutral-300 p-5 md:p-10">
             <div className="flex flex-col items-center justify-center md:w-1/2 p-5">
-                <img className="h-auto max-w-[40vh] rounded-2xl " src={mobile} alt="Mobile App" />
+                <img className="w-auto max-h-[40vh] rounded-2xl " src={mobile} alt="Mobile App" />
             </div>
             <div className="flex flex-col items-center justify-center md:w-1/2 p-5">
                 <h1 className="text-[#2C3E50] font-bold text-lg md:text-xl text-center">

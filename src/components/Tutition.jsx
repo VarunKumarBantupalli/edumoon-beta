@@ -4,6 +4,8 @@ import Bookdemoclass from './Bookdemoclass'
 import Mentors from './Mentors'
 import Stats from '../utils/Stats'
 import Testimonial from '../utils/Testimonial'
+import Exploreus from './Exploreus'
+import PopularCourses from './PopularCourses'
 
 
 
@@ -12,8 +14,9 @@ function Tutition() {
     <>
      <Hiring/>
      {/* <Bookdemoclass/> */}
+     <Exploreus/>
      <Mentors/>
-     <Stats/>
+     <PopularCourses/>
      <Testimonial/>
 
     </>

@@ -4,6 +4,8 @@ import Stats from '../utils/Stats'
 import SocialMedia from '../utils/SocialMedia'
 import Webinar from './Webinar'
 import Workshops from './Workshops'
+import TestimonialforCourses from '../utils/TestimonialforCourses'
+import Outdooractivites from '../components/Outdooractivites'
 
 
 function Events() {
@@ -12,8 +14,12 @@ function Events() {
       <Lectures/>
       <Stats/>
       <SocialMedia/>
-      <Webinar/>
+          
       <Workshops/>
+      <Webinar/> 
+      <Outdooractivites/>
+      
+      <TestimonialforCourses/>
 
       </>
   )
