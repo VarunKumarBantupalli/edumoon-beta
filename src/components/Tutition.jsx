@@ -6,15 +6,18 @@ import Stats from '../utils/Stats'
 import Testimonial from '../utils/Testimonial'
 import Exploreus from './Exploreus'
 import PopularCourses from './PopularCourses'
+import RegistrationButtons from './RegistrationButtons'
 
 
 
 function Tutition() {
   return (
     <>
-     <Hiring/>
+     {/* <Hiring/> */}
      {/* <Bookdemoclass/> */}
+     
      <Exploreus/>
+     <RegistrationButtons/>
      <Mentors/>
      <PopularCourses/>
      <Testimonial/>

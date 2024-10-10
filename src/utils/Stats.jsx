@@ -50,7 +50,7 @@ const Stats = () => {
     <section className="text-gray-600 body-font py-20 bg-white">
       <div className="container px-5 mx-auto">
         <div className="w-full mb-10">
-          <h2 className="text-4xl font-bold text-center text-white bg-[#2C3E50] p-4 rounded-lg shadow-lg">
+          <h2 className="text-4xl font-bold text-center text-[#2C3E50]  p-4 rounded-lg ">
             <strong>Our Achievements</strong>
           </h2>
         </div>
@@ -68,26 +68,7 @@ const Stats = () => {
                 <div className="p-1">
                   <h2 className="title-font text-xl font-bold text-black mb-2">{stat.title}</h2>
                   <p className="leading-relaxed text-black mb-4">{stat.description}</p>
-                  <div className="flex items-center justify-start">
-                    {/* <a
-                      href="https://www.edumoon.in/s/store"
-                      className="text-blue-200 inline-flex items-center transition duration-300 hover:text-blue-400"
-                    >
-                      Learn More
-                      <svg
-                        className="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M5 12h14" />
-                        <path d="M12 5l7 7-7 7" />
-                      </svg>
-                    </a> */}
-                  </div>
+
                 </div>
               </div>
             </div>

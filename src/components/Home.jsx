@@ -9,7 +9,7 @@ import Workshops from './Workshops';
 import Hiring from './Hiring';
 import Outdooractivites from './Outdooractivites';
 import Mobileapp from './Mobileapp';
-
+import Articles from '../utils/Articles'
 
 
 import Trustedby from '../utils/Trustedby';
@@ -18,6 +18,7 @@ import LandingPage from './LandingPage';
 
 import ClubsDisplay from './ClubsDisplay';
 
+import smthg from '../assets/images/other_images/hiring.jpg';
 
 import "swiper/css";
 import PopularCourses from './PopularCourses';
@@ -26,24 +27,20 @@ function Home() {
   return (
     <>
       <LandingPage/>
-      <Workshops />
-      <Webinar />
-      <Outdooractivites />
-      
-
-      
       <Trustedby />
-      <Clients />
-      <ClubsDisplay/>
-
+      <Stats/>
+      <Articles/>
       <PopularCourses/>
-
-
-
-      <SocialMedia />
-      <Hiring />
-      <Stats />
-     
+      <div className=" mx-auto" id="hero">
+        
+        <img
+          className="w-full h-auto object-cover rounded-lg shadow-lg mb-8"
+          src={smthg}
+          alt="Example"
+        />
+        </div>
+        <Workshops />
+      <Webinar />   
       <Testimonial />
       <Mobileapp />
     </>

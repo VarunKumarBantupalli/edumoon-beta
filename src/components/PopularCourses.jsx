@@ -47,7 +47,7 @@ const PopularCourses = () => {
   ];
 
   return (
-    <div className="px-6 py-10">
+    <div className="px-6 py-10 my-10">
       <h1 className="text-center text-3xl font-bold text-gray-500 mb-10">POPULAR ONLINE COURSES</h1>
       <h5 className="text-center font-bold text-xl mb-6">
         Expert team teaches all the popular courses like Web development, App development, and EAMCET.

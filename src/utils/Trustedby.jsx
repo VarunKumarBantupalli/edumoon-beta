@@ -11,7 +11,7 @@ import icon8 from '../assets/images/trustedby_images/startupindialogo.png';
 function Trustedby() {
     return (
         <div className="bg-white py-10">
-            <h2 className="text-4xl font-bold text-center mb-6 text-white bg-[#2C3E50] p-2">
+            <h2 className="text-4xl font-bold text-center mb-6 text-[#2C3E50]  p-2">
                 <strong>Trusted By</strong>
             </h2>
             <div className="container mx-auto px-4">

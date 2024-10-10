@@ -1,51 +1,65 @@
-import React from 'react';
-import Slider from 'react-slick';
-import landing1 from '../assets/images/landing_images/landing1.jpg';
-import landing2 from '../assets/images/landing_images/landing2.jpg';
-import landing3 from '../assets/images/landing_images/landing3.jpg';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState } from 'react';
+import home1 from '../assets/images/homepage_images/hero1.svg';
+import socialMediaPlatforms from '../javascript/data/socialmedia';
 
-const LandingPage = () => {
-  const settings = {
-    dots: true,  // Show navigation dots
-    infinite: true,  // Loop through images infinitely
-    speed: 500,  // Transition speed
-    slidesToShow: 1,  // Show one image at a time
-    slidesToScroll: 1,  // Scroll one image at a time
-    arrows: true,  // Show navigation arrows
-    autoplay: true,  // Automatically scroll images
-    autoplaySpeed: 3000,  // Autoplay speed in milliseconds
-    pauseOnHover: true,  // Pause on hover
+function LandingPage() {
+  const [showSocialMedia, setShowSocialMedia] = useState(false);
+
+  const toggleSocialMedia = () => {
+    setShowSocialMedia(prevState => !prevState);
   };
 
   return (
-    <div className="w-full  bg-cover bg-center bg-no-repeat text-white overflow-hidden">
-      <Slider {...settings}>
-        <div>
-          <img
-            src={landing1}
-            alt="landing1"
-            className="w-full  object-contain"
-          />
+    <>
+      <div className="home flex flex-col md:flex-row justify-center items-center mt-10 h-auto md:h-[60vh]">
+
+        <div className="right mx-5 mt-10 md:mt-0">
+          <img src={home1} alt="Hero" className="w-full md:w-auto border border-b-5" />
         </div>
-        <div>
-          <img
-            src={landing2}
-            alt="landing2"
-            className="w-full  object-contain "
-          />
+
+        <div className="left mx-5 flex justify-center items-center flex-col text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold my-3">
+            Largest Interactive Student Community
+          </h1>
+          <h2 className="text-2xl md:text-4xl font-bold my-3">
+            To UpSkill your Career with Experts and a Great Network
+          </h2>
+          <button
+            className="p-3 rounded-xl my-3 text-xl md:text-3xl text-white bg-gradient-to-r from-pink-500 to-orange-500 hover:scale-105 transition-transform duration-300"
+            onClick={toggleSocialMedia}
+          >
+            Join Now
+          </button>
+
+          {/* Toggle social media div */}
+          {showSocialMedia && (
+            <div className=" h-auto w-full md:w-[40vw] p-5 rounded-xl mt-3">
+              <h3 className="text-gray-600  text-lg md:text-2xl font-bold mb-4">Join With Us in </h3>
+              <div className="flex flex-wrap justify-center gap-4 shadow-xl">
+                {socialMediaPlatforms.map((platform, index) => (
+                  <a
+                    key={index}
+                    href={platform.link}
+                    className="text-white text-center hover:text-gray-600 transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={platform.logo}
+                      alt={platform.name}
+                      className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-2"
+                    />
+                    <span className="block text-sm md:text-base">{platform.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-        <div>
-          <img
-            src={landing3}
-            alt="landing3"
-            className="w-full object-contain"
-          />
-        </div>
-      </Slider>
-    </div>
+
+      </div>
+    </>
   );
-};
+}
 
 export default LandingPage;
