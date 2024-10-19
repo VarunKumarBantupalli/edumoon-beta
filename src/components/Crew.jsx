@@ -41,7 +41,7 @@ const Crew = () => {
             <div className="h-full  flex flex-col items-center text-center ">
               <img
                 alt="team"
-                className="w-48 h-48 object-cover object-center rounded-full mb-4"
+                className="w-48 h-48 object-contain object-center rounded-full mb-4"
                 src={jhansi}
               />
               <h2 className="text-xl font-medium text-gray-900">Jhansi</h2>

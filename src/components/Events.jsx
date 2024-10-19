@@ -12,7 +12,7 @@ function Events() {
   return (
       <>
       <Lectures/>
-      <Stats/>
+
       <SocialMedia/>
           
       <Workshops/>
