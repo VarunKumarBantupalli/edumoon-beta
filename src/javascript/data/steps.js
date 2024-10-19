@@ -39,10 +39,6 @@ export const stepsData = [
       heading: "Step 8: Start Tutoring",
       content: "Start tutoring once your verified profile is complete; we'll match you with students based on their preferences, location, and your subject offerings. Be prepared to communicate with potential students, schedule lessons, and deliver high-quality instruction to help them achieve academic success.",
     },
-    {
-      id: 9,
-      heading: "Note:",
-      content: "Remember, creating a detailed and informative profile will significantly increase your chances of attracting students. Highlight your qualifications, experience, and teaching approach to stand out from other tutors. Good luck, and we look forward to welcoming you as a tutor on our website!",
-    },
+
   ];
   

@@ -33,7 +33,7 @@ function OurTeam() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="w-full bg-white sm:w-1/2 lg:w-1/3 p-6 flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              className="w-full  sm:w-1/2 lg:w-1/3 p-6 flex flex-col items-center text-center rounded-lg "
             >
               <div className="relative w-48 h-48 mb-4 ">
                 <img
@@ -44,14 +44,14 @@ function OurTeam() {
               </div>
               <div className="w-full">
                 <a
-                  href={member.link}
+                  href='#'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="title-font font-medium text-lg text-[#2C3E50] hover:text-green-600 transition-colors duration-200 ease-in-out"
                 >
                   {member.name}
                 </a>
-                <h3 className="text-[#2C3E50] mb-3 text-sm">{member.title}</h3>
+               
               </div>
             </div>
           ))}

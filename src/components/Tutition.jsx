@@ -1,7 +1,4 @@
 import React from 'react'
-
-import Mentors from './Mentors'
-
 import Testimonial from '../utils/Testimonial'
 import Exploreus from './Exploreus'
 import PopularCourses from './PopularCourses'
@@ -16,7 +13,6 @@ function Tutition() {
      
      <Exploreus/>
      <RegistrationButtons/>
-     <Mentors/>
      <PopularCourses/>
      <Testimonial/>
 

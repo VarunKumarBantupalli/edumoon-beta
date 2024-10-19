@@ -22,13 +22,7 @@ const ClubsCaurosel = () => {
   return (
     <div className="w-full  bg-cover bg-center bg-no-repeat text-white overflow-hidden">
       <Slider {...settings}>
-        <div>
-          <img
-            src={landing1}
-            alt="landing1"
-            className="w-full   object-contain"
-          />
-        </div>
+
         <div>
           <img
             src={landing2}

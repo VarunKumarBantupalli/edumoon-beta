@@ -87,7 +87,7 @@ const CollegeClub = () => {
       <CollegesDisplay />
       <div className="flex justify-center mt-8">
         <Link to='/clubsleading'>
-          <button className="bg-gradient-to-r from-blue-400 to-purple-500 text-white text-md md:text-lg 
+          <button className="bg-gradient-to-r from-teal-400 to-green-400 text-white text-md md:text-lg 
                 font-semibold py-3 md:py-5 px-6 md:px-10 rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-lg  focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50  m-10">
             Know More
           </button>

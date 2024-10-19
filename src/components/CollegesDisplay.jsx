@@ -85,7 +85,7 @@ import { Link } from 'react-router-dom';
 
         return (
             <>
-                <section className="bg-white shadow-lg text-blue-950 body-font">
+                <section className="bg-white  text-blue-950 body-font">
                     <div className="container max-w-screen-lg px-5 py-10 mx-auto">
                         <div className="flex flex-col text-center w-full mb-12">
                             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-blue-950">

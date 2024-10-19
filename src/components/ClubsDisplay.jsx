@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import edumoonLogo from '../assets/images/socialmedialogos/edumoonlogo.png';
-import youtubeLogo from '../assets/images/socialmedialogos/youtubelogo.png';
 import { Link } from 'react-router-dom';
 
 const ClubsDisplay = () => {
@@ -56,8 +55,8 @@ const ClubsDisplay = () => {
           "Unlock your potential with our exclusive clubs, designed to inspire learning and creativity. Join us and connect with a thriving community of learners!"
           </h1>
 
-          <Link to='/clubs'>
-            <button className="w-full max-w-xs p-3 rounded-xl text-white font-bold text-lg md:text-xl bg-blue-500  hover:bg-slate-500">
+          <Link to='/clubsleading'>
+            <button className="w-full max-w-xs p-3 rounded-xl text-white font-bold text-lg md:text-xl bg-gradient-to-r from-teal-400 to-green-400  hover:bg-slate-500">
               Enroll Now!!
             </button>
             </Link>
