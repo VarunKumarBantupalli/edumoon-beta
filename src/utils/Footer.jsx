@@ -34,16 +34,16 @@ function Footer() {
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
               <Link to='/'>  <li>
-                <a className="text-black hover:text-gray-800 mb-2 inline-block">HOME</a>
+                <p className="text-black hover:text-gray-800 mb-2 inline-block">HOME</p>
               </li></Link>
               <Link to='/aboutus'>  <li>
-                <a className="text-black hover:text-gray-800 mb-2 inline-block">ABOUT US</a>
+                <p className="text-black hover:text-gray-800 mb-2 inline-block">ABOUT US</p>
               </li></Link>
               <li>
-                <a href="https://www.edumoon.in/s/store" className="text-black hover:text-gray-800 mb-2 inline-block">COURSES</a>
+                <p href="https://www.edumoon.in/s/store" className="text-black hover:text-gray-800 mb-2 inline-block">COURSES</p>
               </li>
               <Link to='/events' > <li>
-                <a className="text-black hover:text-gray-800 mb-2 inline-block">EVENTS</a>
+                <p className="text-black hover:text-gray-800 mb-2 inline-block">EVENTS</p>
               </li></Link>
             </nav>
           </div>
@@ -52,10 +52,10 @@ function Footer() {
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
               <Link to='/clubs'> <li>
-                <a className="text-black hover:text-gray-800 mb-2 inline-block">CLUBS</a>
+                <p className="text-black hover:text-gray-800 mb-2 inline-block">CLUBS</p>
               </li> </Link>
               <Link to='/tution'> <li>
-                <a className="text-black hover:text-gray-800 mb-2 inline-block">TUTIONS</a>
+                <p className="text-black hover:text-gray-800 mb-2 inline-block">TUTIONS</p>
               </li> </Link>
               <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">PRIVACY POLICY</a>
