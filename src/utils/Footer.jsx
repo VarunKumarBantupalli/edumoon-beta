@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 import logo from '../assets/images/socialmedialogos/edumoonlogo.png'; // Update with the correct path if needed
 
+import applestorelogo from '../assets/images/socialmedialogos/apple.store.png';
+import playstorelogo from '../assets/images/socialmedialogos/playstore_latest.png';
+
 function Footer() {
   return (
     <footer className="text-black body-font bg-white">
@@ -15,6 +18,14 @@ function Footer() {
           <p className="mt-2 text-sm text-black">
             EduMoon is building the largest student community for engineers to develop new skills, network, find internships, grow, and earn.
           </p>
+          <div className="flex flex-col items-center">
+            <a href="https://play.google.com/store/apps/details?id=com.edumoon.learners" className="m-2">
+              <img className="h-12 md:h-16 rounded-xl" src={applestorelogo} alt="App Store" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.edumoon.learners" className="m-2">
+              <img className="h-12 md:h-16 rounded-xl" src={playstorelogo} alt="Play Store" />
+            </a>
+          </div>
         </div>
 
         {/* Navigation Links */}
@@ -22,13 +33,13 @@ function Footer() {
           {/* Section 1 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
-            <Link to='/'>  <li>
+              <Link to='/'>  <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">HOME</a>
               </li></Link>
               <Link to='/aboutus'>  <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">ABOUT US</a>
               </li></Link>
-                <li>
+              <li>
                 <a href="https://www.edumoon.in/s/store" className="text-black hover:text-gray-800 mb-2 inline-block">COURSES</a>
               </li>
               <Link to='/events' > <li>
@@ -40,7 +51,7 @@ function Footer() {
           {/* Section 2 */}
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <nav className="list-none mb-10">
-             <Link to='/clubs'> <li>
+              <Link to='/clubs'> <li>
                 <a className="text-black hover:text-gray-800 mb-2 inline-block">CLUBS</a>
               </li> </Link>
               <Link to='/tution'> <li>
@@ -55,7 +66,7 @@ function Footer() {
             </nav>
           </div>
 
-          
+
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-black tracking-widest text-sm mb-3">CONTACT US</h2>
             <nav className="list-none mb-10">
@@ -73,7 +84,7 @@ function Footer() {
         </div>
       </div>
 
-     
+
       <div className="border-t border-gray-200">
         <div className="bg-white">
           <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">

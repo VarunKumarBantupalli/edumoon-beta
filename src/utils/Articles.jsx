@@ -50,11 +50,11 @@ const Articles = () => {
             rel="noopener noreferrer"
             className="block bg-white shadow-lg rounded-lg mx-4 cursor-pointer transform transition-transform hover:scale-105"
           >
-            <div className="relative w-full h-60 object-fill rounded-t-lg">
+            <div className="relative w-full h-60 object-contain rounded-t-lg">
               <img 
                 src={article.image} 
                 alt={article.title} 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="p-4">

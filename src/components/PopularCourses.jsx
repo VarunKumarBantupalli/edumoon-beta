@@ -55,7 +55,7 @@ const PopularCourses = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {courses.map((course) => (
-          <a href={course.link} key={course.id}>
+          <div key={course.id}>
             <div className="card-flyer border border-gray-300 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105">
               <div className="text-box">
                 <div className="image-box">
@@ -80,7 +80,7 @@ const PopularCourses = () => {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
 

@@ -4,13 +4,14 @@ import SocialMedia from '../utils/SocialMedia'
 import ClubsDisplay from './ClubsDisplay'
 import OfferedClubs from './OfferedClubs'
 import LandingPage from './LandingPage'
+import ClubsCaurosel from './ClubsCaurosel'
 
 import TestimonialsforClubs from '../utils/TestimonialsforClubs'
 
 function Clubs() {
   return (
      <>
-       <LandingPage/>
+       <ClubsCaurosel/>
        <OfferedClubs/>
        <Collegeclub/>      
        <ClubsDisplay/>

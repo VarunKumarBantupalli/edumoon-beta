@@ -42,7 +42,7 @@ function Home() {
         <Workshops />
       <Webinar />   
       <Testimonial />
-      <Mobileapp />
+
     </>
   );
 }

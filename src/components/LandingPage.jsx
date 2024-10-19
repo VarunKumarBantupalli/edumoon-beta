@@ -34,7 +34,7 @@ function LandingPage() {
           {/* Toggle social media div */}
           {showSocialMedia && (
             <div className=" h-auto w-full md:w-[40vw] p-5 rounded-xl mt-3">
-              <h3 className="text-gray-600  text-lg md:text-2xl font-bold mb-4">Join With Us in </h3>
+              
               <div className="flex flex-wrap justify-center gap-4 shadow-xl">
                 {socialMediaPlatforms.map((platform, index) => (
                   <a
@@ -47,7 +47,7 @@ function LandingPage() {
                     <img
                       src={platform.logo}
                       alt={platform.name}
-                      className="w-8 h-8 md:w-12 md:h-12 mx-auto mb-2"
+                      className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-2"
                     />
                     <span className="block text-sm md:text-base">{platform.name}</span>
                   </a>

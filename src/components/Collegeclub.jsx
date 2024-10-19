@@ -13,6 +13,10 @@ import pydahImage from '../assets/images/other_images/Pydah.png';
 import bullayaImage from '../assets/images/other_images/bullaya.png';
 import gitamImage from '../assets/images/other_images/gitam.png';
 
+import CollegesDisplay from './CollegesDisplay';
+
+import { Link } from 'react-router-dom';
+
 const CollegeClub = () => {
   const colleges = [
     {
@@ -78,40 +82,21 @@ const CollegeClub = () => {
   ];
 
   return (
-    <section className="bg-white shadow-lg text-blue-950 body-font">
-      <div className="container max-w-screen-lg px-5 py-10 mx-auto">
-        <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-blue-950">
-            We are Established at
-          </h1>
-        </div>
+    <>
 
-        <div className="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-6 gap-8">
-          {colleges.map((college, index) => (
-            <div
-              key={index}
-              className="p-4 hover:scale-105 transform transition duration-300"
-            >
-              <div className="h-full flex flex-col items-center text-center">
-                <img
-                  alt={college.name}
-                  className="flex-shrink-0 rounded-lg w-full h-40 object-contain object-center mb-4 hover:scale-110 transform transition duration-300 shadow-lg"
-                  src={college.image}
-                />
-                <div className="w-full">
-                  <a
-                    href={college.link}
-                    className="title-font font-medium text-lg text-blue-950 hover:text-xl hover:text-blue-800 transition duration-300"
-                  >
-                    {college.name}
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      <CollegesDisplay />
+      <div className="flex justify-center mt-8">
+        <Link to='/clubsleading'>
+          <button className="bg-gradient-to-r from-blue-400 to-purple-500 text-white text-md md:text-lg 
+                font-semibold py-3 md:py-5 px-6 md:px-10 rounded-xl shadow-md transition-transform transform hover:scale-105 hover:shadow-lg  focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-opacity-50  m-10">
+            Know More
+          </button>
+        </Link>
       </div>
-    </section>
+
+    </>
+
+
   );
 };
 
