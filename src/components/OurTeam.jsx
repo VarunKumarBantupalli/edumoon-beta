@@ -17,37 +17,47 @@ function OurTeam() {
   ];
 
   return (
-    <>
-      <section className="text-[#2C3E50] body-font">
-        <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12 items-center">
-            <h1 className="text-3xl md:text-4xl font-medium title-font mb-4 text-[#2C3E50]">
-              OUR TEAM
-            </h1>
-          </div>
-          {/* Flex layout for team members */}
-          <div className="flex flex-wrap justify-center items-center gap-6">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="p-4 flex flex-col items-center text-center rounded-lg shadow-lg m-5">
-                <div className="relative w-full h-56 mb-4 ">
-                  <img
-                    alt="team"
-                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                    src={member.imgSrc}
-                  />
-                </div>
-                <div className="w-full">
-                  <a href={member.link} className="title-font font-medium text-[#2C3E50] text-lg">
-                    {member.name}
-                  </a>
-                  <h3 className="text-[#2C3E50] mb-3">{member.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
+    <section className="text-[#2C3E50] body-font bg-gray-200">
+      <div className="container px-5 py-16 mx-auto">
+        <div className="flex flex-col text-center w-full mb-12 items-center">
+          <h1 className="text-4xl font-semibold title-font mb-4 text-[#2C3E50]">
+            CORE TEAM
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-600">
+            Meet the talented individuals behind our success!
+          </p>
         </div>
-      </section>
-    </>
+
+        {/* Grid layout for team members */}
+        <div className="flex flex-wrap justify-center items-center  gap-8">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="w-full bg-white sm:w-1/2 lg:w-1/3 p-6 flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <div className="relative w-48 h-48 mb-4 ">
+                <img
+                  alt={member.name}
+                  className="absolute inset-0 w-full h-full object-cover rounded-full"
+                  src={member.imgSrc}
+                />
+              </div>
+              <div className="w-full">
+                <a
+                  href={member.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="title-font font-medium text-lg text-[#2C3E50] hover:text-green-600 transition-colors duration-200 ease-in-out"
+                >
+                  {member.name}
+                </a>
+                <h3 className="text-[#2C3E50] mb-3 text-sm">{member.title}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

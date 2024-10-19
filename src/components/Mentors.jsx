@@ -47,7 +47,7 @@ const mentors = [
 
 const Mentors = () => {
   return (
-    <section className="text-gray-600 bg-white body-font py-24">
+    <section className="text-gray-600 bg-gray-100 body-font py-24">
       <div className="container px-5 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="text-4xl font-medium title-font text-gray-600 mb-4">OUR MENTORS</h1>

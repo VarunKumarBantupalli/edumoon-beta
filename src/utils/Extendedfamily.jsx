@@ -8,10 +8,10 @@ import ext4 from '../assets/images/extendedfamily_images/ext4.jpg'
 const Extendedfamily = () => {
     return (
         <>
-      <section className="text-white bg-[#2C3E50] body-font">
+      <section className="text-gray-600  bg-gray-200 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="text-4xl font-medium title-font mb-4 text-white">OUR EXTENDED FAMILY</h1>
+            <h1 className="text-4xl font-medium title-font mb-4 text-gray-600">OUR EXTENDED FAMILY</h1>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/4 md:w-1/2">

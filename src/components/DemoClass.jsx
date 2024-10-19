@@ -54,24 +54,24 @@ function DemoClass() {
 
             <div className="steps grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 justify-center items-center w-full max-w-screen-lg mx-auto px-4">
                 <div className="flex flex-col items-center">
-                    <div className="cards bg-gradient-to-r from-purple-500 to-blue-500 text-white 
-                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+                    <div className="cards bg-gradient-to-r from-teal-400 to-green-400 text-white 
+                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg   focus:ring-opacity-50">
                         <FaWpforms className='text-3xl md:text-4xl' />
                     </div>
                     <h1 className="text-md md:text-lg mt-4 font-bold">Fill the Form</h1>
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <div className="cards bg-gradient-to-r from-purple-500 to-blue-500 text-white 
-                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+                    <div className="cards bg-gradient-to-r from-teal-400 to-green-400 text-white 
+                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg   focus:ring-opacity-50">
                         <IoCallOutline className='text-3xl md:text-4xl' />
                     </div>
                     <h1 className="text-md md:text-lg mt-4 font-bold">Wait for Our Call</h1>
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <div className="cards bg-gradient-to-r from-purple-500 to-blue-500 text-white 
-                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg hover:from-purple-600 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
+                    <div className="cards bg-gradient-to-r from-teal-400 to-green-400 text-white 
+                flex items-center justify-center w-28 h-28 md:w-40 md:h-40 rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg   focus:ring-opacity-50">
                         <GoBook className='text-3xl md:text-4xl' />
                     </div>
                     <h1 className="text-md md:text-lg mt-4 font-bold">Start the Course</h1>
