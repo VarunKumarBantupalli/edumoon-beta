@@ -4,7 +4,7 @@ const Webinar = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    const imageImports = import.meta.glob('../assets/images/webinars_images/*.{png,jpg,jpeg,webp}');
+    const imageImports = import.meta.glob('../src/assets/images/webinars_images/*.{png,jpg,jpeg,webp}');
     const loadImages = async () => {
       const loadedImages = await Promise.all(
         Object.keys(imageImports).map((key) => imageImports[key]().then((module) => module.default))
