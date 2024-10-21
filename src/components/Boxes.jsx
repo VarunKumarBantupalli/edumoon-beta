@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// Import your local components
+
 import Webinar from './Webinar';
 import WorkshopGallery from './WorkshopGallery';
 import ClubsGallery from './ClubsGallery';
@@ -8,23 +8,27 @@ import OtherImages from './OtherImages';
 const boxesData = [
   {
     title: 'Webinars',
-    icon: 'fas fa-video',
+    icon: 'fas fa-video', // Font Awesome icon class
     component: <Webinar />,
+    link: 'src/Webinar.jsx', // Replace with your link
   },
   {
     title: 'Workshops',
     icon: 'fas fa-tools',
     component: <WorkshopGallery />,
+    link: 'src/WorkshopGallery.jsx',
   },
   {
     title: 'Live Sessions',
     icon: 'fas fa-chalkboard-teacher',
-    component:<OtherImages />,
+    component: <OtherImages />,
+    link: 'src/ClubsGallery.jsx',
   },
   {
     title: 'Clubs',
     icon: 'fas fa-users',
-    component: <ClubsGallery />
+    component: <ClubsGallery />,
+    link: 'src/OtherImages.jsx',
   }
 ];
 
