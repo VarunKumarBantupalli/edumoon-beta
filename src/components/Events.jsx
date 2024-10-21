@@ -6,21 +6,21 @@ import Webinar from './Webinar'
 import Workshops from './Workshops'
 import TestimonialforCourses from '../utils/TestimonialforCourses'
 import Outdooractivites from '../components/Outdooractivites'
+import Eventcarousel from './Eventscarousel'
+import YoutubeVideos from './YoutubeVideos'
+import Boxes from './Boxes'
 
 
 function Events() {
   return (
       <>
-      <Lectures/>
-
-      <SocialMedia/>
-          
-      <Workshops/>
-      <Webinar/> 
-      <Outdooractivites/>
+       <Eventcarousel/>
+       <Boxes/>
+       <YoutubeVideos/>
       
+      
+      <SocialMedia/>
       <TestimonialforCourses/>
-
       </>
   )
 }
