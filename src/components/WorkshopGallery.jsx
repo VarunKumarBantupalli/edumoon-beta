@@ -5,7 +5,7 @@ const WorkshopGallery = () => {
 
   useEffect(() => {
     // Adjust the path to point to the src/workshop_images directory
-    const imageImports = import.meta.glob('../src/assets/images/workshop_images/*.{png,jpg,jpeg,webp}');
+    const imageImports = import.meta.glob('../assets/images/workshop_images/*.{png,jpg,jpeg,webp,svg}');
 
     const loadImages = async () => {
       const loadedImages = await Promise.all(

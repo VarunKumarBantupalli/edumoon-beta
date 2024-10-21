@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import image1 from './assets/images/other_images/scroll1.png'; // Adjusted paths
-import image2 from './assets/images/other_images/scroll2.png';
-import image3 from './assets/images/other_images/scroll3.png';
+import image1 from '../assets/images/other_images/scroll1.png'; // Adjusted paths
+import image2 from '../assets/images/other_images/scroll2.png';
+import image3 from '../assets/images/other_images/scroll3.png';
 
 const Top = () => {
   // Array of image imports

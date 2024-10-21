@@ -4,9 +4,9 @@ const ClubsGallery = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    // Adjust the path to point to the src/Clubs_images directory
-    const imageImports = import.meta.glob('../src/assets/images/ClubsGallery/*.{png,jpg,jpeg,webp}'); // Added /* to the path
-
+    // Correct the path to point to the src/assets/images/ClubsGallery folder
+    const imageImports = import.meta.glob('../assets/images/ClubsGallery/*.{png,jpg,jpeg,webp,svg}'); // Path without backslashes
+    
     const loadImages = async () => {
       const loadedImages = await Promise.all(
         Object.keys(imageImports).map((key) =>
@@ -20,7 +20,7 @@ const ClubsGallery = () => {
   }, []);
 
   return (
-    <div className="w-full max-w-8xl mx-auto p-20 bg-white shadow-lg rounded-lg m-3"> {/* Adjusted padding to p-10 */}
+    <div className="w-full max-w-8xl mx-auto p-10 bg-white shadow-lg rounded-lg m-3">
       <div className="text-center mt-4">
         <p className="text-4xl text-[#2C3E50] font-bold mb-2">CLUBS</p>
       </div>

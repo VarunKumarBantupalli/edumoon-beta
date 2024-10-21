@@ -13,10 +13,6 @@ const youtubeVideos = [
     id: 'video3',
     link: 'https://www.youtube.com/live/vf0bFM2FzBQ?si=18aWgB_lMxU8Srfj',
   },
-  //{
-    //  id: 'video4',
-    //link: 'https://www.youtube.com/live/oYSKu6BZ9BY?si=88tXwJ6NFE3HA3rA',
-  //},
   // Add more videos as needed
 ];
 
@@ -32,7 +28,7 @@ const UpComing = () => {
 
   useEffect(() => {
     // Dynamically generate thumbnail URLs based on video IDs
-    const videoData = youtubeVideos.map(video => {
+    const videoData = youtubeVideos.map((video) => {
       const videoID = getYoutubeVideoID(video.link);
       return {
         ...video,
@@ -55,14 +51,14 @@ const UpComing = () => {
       </div>
 
       <div className="w-full overflow-hidden">
-        <div className="flex items-center animate-scroll whitespace-nowrap">
+        <div className="flex items-center space-x-4 animate-scroll"> {/* Added space-x-4 for consistent spacing */}
           {thumbnails.map((video, index) => (
             <a
               key={index}
               href={video.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-2 inline-block"
+              className="flex-shrink-0" // Prevents images from shrinking
             >
               <img
                 src={video.thumbnails[0]} // Try the highest resolution first
@@ -77,7 +73,10 @@ const UpComing = () => {
                   }
                 }}
                 alt={`workshop-video-${index}`}
-                className="h-64 w-auto" // Set height and auto width for better proportions
+                className="
+                  w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[450px] xl:max-w-[500px]  // Set responsive width
+                  h-auto object-contain // Maintain aspect ratio
+                "
               />
             </a>
           ))}

@@ -1,25 +1,21 @@
 import React from 'react'
-import Lectures from './Lectures'
-import Stats from '../utils/Stats'
-import SocialMedia from '../utils/SocialMedia'
-import Webinar from './Webinar'
+import Top from './Top'
+import Boxes from './Boxes'
+import UpComing from './UpComing'
 import Workshops from './Workshops'
-import TestimonialforCourses from '../utils/TestimonialforCourses'
-import Outdooractivites from '../components/Outdooractivites'
+import SocialMedia from '../utils/SocialMedia'
+
 
 
 function Events() {
   return (
       <>
-      <Lectures/>
-
-      <SocialMedia/>
-          
+      <Top/>
+      <Boxes/>
+      <UpComing/>
       <Workshops/>
-      <Webinar/> 
-      <Outdooractivites/>
-      
-      <TestimonialforCourses/>
+      <SocialMedia/>
+
 
       </>
   )
